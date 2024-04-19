@@ -1,0 +1,38 @@
+.custom-card{
+    /* background:#ccc; */
+    background:linear-gradient(45deg, blueviolet, #ff1493a1);
+    color: #ffff !important;
+    width: 430px;
+    height:150px ;
+    border-radius: 20px;
+    transition: 0.3s ease;
+}
+/* .custom-card:hover{
+    /* background: #000 !important;
+    color: #ffff !important; 
+} 
+*/
+.head{
+    display: flex !important;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 1px;
+}
+.icon{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    background: rgb(200, 198, 198);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+.title{
+    font-weight: 900;
+    font-size: 18px;
+}
+.number{
+    float: right;
+    margin-top: 50px;
+}

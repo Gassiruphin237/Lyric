@@ -1,0 +1,140 @@
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+h3{
+    color: #50C19A;
+}
+.input {
+    display: flex;
+    gap: 4px;
+}
+input {
+    height: 40px;
+    padding: 5px;
+    outline: none;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid lightgray; /* Ligne de base */
+    transition: border-color 1s;
+}
+input:focus {
+    border-color: #50C19A; 
+  }
+button{
+    width: 200px;
+    height: 40px;
+    border-radius: 20px;
+    border: 0;
+    cursor: pointer;
+    background: #50C19A;
+    color: white;
+    font-weight: bold;
+}
+.loader {
+    display: inline-block;
+    position: relative;
+    width: 40px;
+    height: 20px;
+    margin-top: 20px;
+  }
+  
+  .loader span {
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background: #50C19A;
+    animation: loaderAnimation 1.2s infinite ease-in-out;
+  }
+  
+  .loader span:nth-child(1) {
+    left: 0;
+    animation-delay: -0.24s;
+  }
+  
+  .loader span:nth-child(2) {
+    left: 24px;
+    animation-delay: -0.12s;
+  }
+  
+  .loader span:nth-child(3) {
+    left: 48px;
+    animation-delay: 0;
+  }
+  
+  @keyframes loaderAnimation {
+    0%, 100% {
+      opacity: 1;
+      transform: scale(1);
+    }
+    50% {
+      opacity: 0.5;
+      transform: scale(0.5);
+    }
+  }
+  .error{
+    color: red;
+    font-style: italic;
+    font-size: 12px;
+  }
+ /* Style de la modal */
+.modal {
+    /* display: none;  */
+    position: fixed; 
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%; 
+    overflow: auto; 
+    backdrop-filter: blur(8px); /* Effet de flou sur l'arrière-plan */
+  }
+  
+/* Style de la modal */
+.modal-content {
+    background-color: #fefefe;
+    margin: 10% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    max-width: 80%; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    position: relative;
+    line-height: 1.6; /* Espacement entre les lignes */
+  }
+  
+  
+  .close {
+    color: #aaaaaa;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+.modal button{
+    width: 100px;
+    font-size: 10px;
+    background: #113b8d;
+    border-radius: 10px;
+
+}
